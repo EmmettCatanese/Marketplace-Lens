@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Marketplace Lens",
+  "version": "0.1.0",
+  "description": "Overlays pricing on Facebook Marketplace vehicle listings.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.facebook.com/marketplace/*",
+        "https://www.facebook.com/*/marketplace/*"
+      ],
+      "js": ["data.js", "parser.js", "content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["data.js"],
+      "matches": ["https://www.facebook.com/*"]
+    }
+  ]
+}

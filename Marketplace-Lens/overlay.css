@@ -1,0 +1,83 @@
+.mpo-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(20, 20, 20, 0.92);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 9999;
+  min-width: 140px;
+  max-width: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  pointer-events: none; 
+}
+
+.mpo-overlay.mpo-not-found {
+  background: rgba(80, 80, 80, 0.85);
+  font-size: 11px;
+}
+
+.mpo-overlay.mpo-range {
+  background: rgba(40, 60, 100, 0.92);
+}
+
+.mpo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.mpo-label {
+  color: #ccc;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mpo-value {
+  font-weight: 600;
+  font-family: ui-monospace, monospace;
+}
+
+.mpo-secondary {
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.mpo-diff {
+  margin-top: 4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+}
+
+.mpo-diff.mpo-over {
+  background: rgba(220, 70, 70, 0.85); 
+}
+
+.mpo-diff.mpo-under {
+  background: rgba(70, 180, 100, 0.85);  
+}
+
+.mpo-trim {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #999;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mpo-msg {
+  font-size: 11px;
+  color: #ddd;
+}
